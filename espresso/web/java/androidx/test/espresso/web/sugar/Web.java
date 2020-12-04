@@ -191,7 +191,7 @@ public final class Web {
     @CheckReturnValue
     public WebInteraction<R> inRoot(Matcher<Root> rootMatcher) {
       return new WebInteraction<R>(
-              viewMatcher, result, window, element, brandNew, timeout, true, rootMatcher);
+              viewMatcher, result, window, element, brandNew, timeout, noActivity, rootMatcher);
     }
 
     /**
